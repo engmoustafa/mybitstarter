@@ -7,7 +7,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   //response.send('Hello World 2!');
-  response.writeHead(200, {'Content-Type': 'text/plain'});
+  response.writeHead(200, {'Content-Type': 'text/html'});
   //res.end('Hello World\n');
   var filePath = "index.html";
   var readStream = fileSystem.createReadStream(filePath);  
